@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- HEADER -->
     <head>
         <title>Foomers - Music Producer</Title>
         <link rel="icon" type="image/x-icon" href="img_1.png">
     </head>
 <style>
+    .textbox {
+        width: 300px;
+        height: 120px;
+        border: 0px;
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+        margin:auto;
+    }
+    div.gallery {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+  color: rgb(194, 162, 0);
+    font-size: 15px;
+}
     body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("website_background.jpg");
@@ -13,26 +53,55 @@
     background-attachment: scroll;
     border-bottom: 1px #000;}
     h1   {color: rgb(194, 162, 0);
-      font-size: 35px;}
+        font-size: 35px;
+        text-shadow: 2px 2px black;}
+      
     h2   {color: rgb(194, 162, 0);
-      font-size: 20px;}
+      font-size: 20px;
+    text-shadow: 2px 2px black}
     h3   {color: rgb(194, 162, 0);
-      font-size: 20px;}
+      font-size: 20px;
+    text-shadow: 2px 2px black}
     p    {color: rgb(194, 162, 0);
       font-size: 15px;}
 </style>
 <body>
-<div style="text-align: center;">
-    <h1>Foomers</h1>
-    <h2>Music Producer</h2>
+<div class="textbox">
+    <h1>Foomers<br> <small>Music Producer</small></h1>
 </div>
-<div style="text-align: center;">
-    <img src="I_Want_It_Artwork.png" width="200" height="200">
+<!-- GALLERY -->
+<div class="gallery">
+
+  <div class="gallery-item">
+    <a target="_blank">
+    <img src="I_Want_It_Artwork.png" alt="I Want It" width="600" height="400">
+    </a>
+  <div class="desc">I Want It (Producer)</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank">
+    <img src="Haunt_You_Artwork.png" alt="Haunt You" width="600" height="400">
+  </a>
+<div class="desc">Haunt You (Producer)</div>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank">
+    <img src="Eerste_Artwork.png" alt="Eerste" width="600" height="400">
+  </a>
+<div class="desc">Eerste (Producer)</div>
+</div>
+</div>
+  
+    
     <br>
+    <div class="textbox">
     <audio controls>
      <source src="I_want_it.wav" type="audio/wav">
     Your browser does not support the audio element.
     </audio>
+    </div>
 </div>
 <div style="text-align: center;">
 <h3>About Me</h3>
